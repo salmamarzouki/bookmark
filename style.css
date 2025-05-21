@@ -1,0 +1,41 @@
+  body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f8fafc;
+      }
+      h1, h2, h3 {
+        font-family: 'Merriweather', serif;
+      }
+      .book-card {
+        transition: all 0.3s ease;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      .book-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      .book-cover {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 0.375rem 0.375rem 0 0;
+      }
+      .btn-bookmark {
+        transition: all 0.2s ease;
+      }
+      .btn-bookmark:hover:not(:disabled) {
+        background-color: #059669;
+      }
+      .empty-state {
+        background-color: #f1f5f9;
+        border: 1px dashed #cbd5e1;
+        border-radius: 0.5rem;
+      }
+      #search-results {
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        max-height: 300px;
+        overflow-y: auto;
+      }
